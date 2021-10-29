@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: unset;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* END RESET */
+
+#loading {
+  background-color: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 320px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 10px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #70d6ff;
+}
+
+.login-header > span {
+  flex: 1;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-content {
+  padding: 10px;
+}
+
+.login-content input {
+  display: block;
+  width: 100%;
+  color: #2b2922;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  background-color: #fafafa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.login-content h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-content span {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ff70a6;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
